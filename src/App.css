@@ -3,6 +3,8 @@
 }
 
 .grid-container {
+  margin-top: 100px;
+  padding-top: 40px;
   width: 70%;
   display: grid;
   margin: 0 auto;
