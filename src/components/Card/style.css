@@ -9,16 +9,16 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.Card__img {
+.Card_img {
     text-align: center;
 }
 
-.Card__types {
+.Card_types {
     display: flex;
     justify-content: center;
 }
 
-.Card__type {
+.Card_type {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -26,22 +26,22 @@ p {
     color: #fff;
 }
 
-.Card__name {
+.Card_name {
     text-align: center;
     text-transform: capitalize;
     font-weight: 800;
 }
 
-.Card__info {
+.Card_info {
     margin-left: 10px;
 }
 
-.Card__data {
+.Card_data {
     padding-bottom: 10px;
 }
 
-.Card__data .title {
-    font-weight: 700;
+.value {
+    font-weight: 500;
 }
 
 .Detail {

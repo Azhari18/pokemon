@@ -5,56 +5,56 @@ import './style.css';
 function Card({ pokemon }) {
     return (
         <div className="Card">
-            <div className="Card__img">
+            <div className="Card_img">
                 <img src={pokemon.sprites.front_default} alt="" />
             </div>
-            <div className="Card__name">
+            <div className="Card_name">
                 {pokemon.name}
             </div>
-            <div className="Card__types">
+            <div className="Card_types">
                 {
                     pokemon.types.map(type => {
                         return (
-                            <div className="Card__type" style={{ backgroundColor: typeColors[type.type.name] }}>
+                            <div className="Card_type" style={{ backgroundColor: typeColors[type.type.name] }}>
                                 {type.type.name}
                             </div>
                         )
                     })
                 }
             </div>
-            <div className="Card__info">
-                <div className="Card__data Card__data--weight">
+            <div className="Card_info">
+                <div className="Card_data">
                     <table className='Detail'>
                         <tr>
                             <th>
-                                <p className="title">Weight</p>
+                                <p>Weight</p>
                             </th>
                             <th>
-                                <p>{pokemon.weight}</p>
+                                <p className="value">{pokemon.weight}</p>
                             </th>
                         </tr>
                     </table>
                 </div>
-                <div className="Card__data Card__data--weight">
+                <div className="Card_data">
                     <table className='Detail'>
                         <tr>
                             <th>
-                                <p className="title">Height</p>
+                                <p>Height</p>
                             </th>
                             <th>
-                                <p>{pokemon.height}</p>
+                                <p className="value">{pokemon.height}</p>
                             </th>
                         </tr>
                     </table>
                 </div>
-                <div className="Card__data Card__data--ability">
+                <div className="Card_data">
                     <table className='Detail'>
                         <tr>
                             <th>
-                                <p className="title">Ability</p>
+                                <p>Ability</p>
                             </th>
                             <th>
-                                <p>{pokemon.abilities[0].ability.name}</p>
+                                <p className="value">{pokemon.abilities[0].ability.name}</p>
                             </th>
                         </tr>
                     </table>
